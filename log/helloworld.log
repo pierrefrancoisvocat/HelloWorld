@@ -1,0 +1,43 @@
+2021-02-23 15:05:22,179 - Starting up Hello World reader
+2021-02-23 15:09:09,152 - Starting up Hello World reader
+2021-02-23 15:09:53,173 - Exiting helloworld listener
+2021-02-23 15:10:48,919 - Starting up Hello World reader
+2021-02-23 15:10:51,339 - berlinhas been read
+2021-02-23 15:10:55,611 - switzerlandhas been read
+2021-02-23 15:10:59,009 - no wherehas been read
+2021-02-23 15:11:00,776 - exithas been read
+2021-02-23 15:11:02,721 - Exiting helloworld listener
+2021-02-23 15:11:35,943 - Starting up Hello World reader
+2021-02-23 15:11:44,369 - Production has been read
+2021-02-23 15:11:46,012 - UAT has been read
+2021-02-23 15:11:48,847 - Test has been read
+2021-02-23 15:11:57,772 - Exiting helloworld listener
+2021-02-23 15:18:58,455 - Starting up Hello World reader
+2021-02-23 15:19:02,990 - what has been read
+2021-02-23 15:19:04,430 - the has been read
+2021-02-23 15:19:05,679 - hell has been read
+2021-02-23 15:19:10,516 - Exiting helloworld listener
+2021-02-23 15:32:49,505 - Starting up Hello World reader
+2021-02-23 15:32:49,506 - helloworld.py has been called
+2021-02-23 15:33:26,538 - Starting up Hello World reader
+2021-02-23 15:33:26,538 - helloworld.py has been called
+2021-02-23 15:33:26,538 - Live has been called
+2021-02-23 15:33:37,654 - Exiting helloworld listener
+2021-02-23 15:36:38,928 - Exiting helloworld listener
+2021-02-23 15:36:41,870 - Starting up Hello World reader
+2021-02-23 15:36:41,870 - helloworld.py has been called
+2021-02-23 15:40:46,150 - Exiting helloworld listener
+2021-02-23 15:43:51,360 - Starting up Hello World reader
+2021-02-23 15:44:20,720 - Starting up Hello World reader
+2021-02-23 15:46:18,803 - Starting up Hello World reader
+2021-02-23 15:46:45,060 - Starting up Hello World reader
+2021-02-23 15:51:16,001 - Starting up Hello World reader
+2021-02-23 15:51:18,879 - Exiting helloworld listener
+2021-02-23 15:52:03,151 - Starting up Hello World reader
+2021-02-23 15:52:03,151 - Spain has been called
+2021-02-23 15:53:41,641 - Starting up Hello World reader
+2021-02-23 15:53:41,642 - Spain has been called
+2021-02-23 15:53:55,028 - Starting up Hello World reader
+2021-02-23 15:53:58,698 - boom has been read
+2021-02-23 15:54:01,848 - town has been read
+2021-02-23 15:54:05,437 - Exiting helloworld listener
