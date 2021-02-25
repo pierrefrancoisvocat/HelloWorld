@@ -8,7 +8,7 @@ from pprint import pprint
 
 #logging 
 
-logging.basicConfig(filename='../log/helloworld.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
+logging.basicConfig(filename='/var/log/helloworld/helloworld.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 logging.info('- Starting up Hello World reader')
 
 #git
