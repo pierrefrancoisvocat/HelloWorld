@@ -13,7 +13,7 @@ Source Control:
 
 Infrastructure:
 
-* Imstall the hello world app using terraform
+* Imstall the hello world app using terraform (?)
 * Read HW logs from FS using Filebeat
 * Write logs into Elasticsearch index called filebeat-pierre
 * Insert "Hello World" environment variable using ansible
