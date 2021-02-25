@@ -3,7 +3,7 @@ from github import Github
 import os
 from pprint import pprint
 
-token = os.getenv('GITHUB_TOKEN', '729007dddd1a6a01fcf8314e93b5e20ac349793b')
+token = os.getenv('GITHUB_TOKEN', '...')
 
 file_path = "requirements.txt"
 g = Github(token)
