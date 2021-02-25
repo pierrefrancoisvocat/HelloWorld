@@ -2,14 +2,14 @@
 
 App:
 
-* Create "Hello World" reader app in python Logging should be verbose
-* Write "hello World" reader app logs to local filesystem
-* Hello world app must read and output environment variable to screen
+* Create "Hello World" reader app in python Logging should be verbose (/)
+* Write "hello World" reader app logs to local filesystem (/)
+* Hello world app must read and output environment variable to screen (/)
 
 Source Control:
 
-* Store hello world reader app code in github
-* Store hello World envirinemnt variable in github
+* Store hello world reader app code in github (/)
+* Store hello World envirinemnt variable in github (/)
 
 Infrastructure:
 

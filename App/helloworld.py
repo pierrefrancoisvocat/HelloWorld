@@ -2,35 +2,54 @@
 
 import logging
 import sys 
+from github import Github
+import os
+from pprint import pprint
 
 #logging 
 
 logging.basicConfig(filename='../log/helloworld.log', level=logging.DEBUG, format='%(asctime)s %(message)s')
 logging.info('- Starting up Hello World reader')
 
+#git
+git_token = input("Please enter git token: ")
+token = os.getenv('GITHUB_TOKEN', git_token)
+g = Github(token)
+repo = g.get_repo("pierrefrancoisvocat/HelloWorld")
+file_path = "/conf/helloworld.conf"
+file = repo.get_contents(file_path, ref="main")
+environment = file.decoded_content.decode("utf-8") 
+
+def push(path, message, content, branch, update=False):        
+    contents = repo.get_contents(path, ref=branch) 
+    repo.update_file(contents.path, message, content, contents.sha, branch=branch) 
+
+print("Environment stored in Git is - ", environment)
+logging.info('- Initiating environment variable from git with a value of ' + environment )
+
 try: 
 
 	for arg in sys.argv:
 
 		if arg != "helloworld.py" :
-			logging.info('- ' + arg + ' has been called')
+			logging.info('- ' + arg + ' has been updated using a call using parameters')
+			push(file_path, "Edit Envirionments", arg, "main", update=True)
 			exit()
 
 	while True:
 
 		print("Type Exit to quit")
-		# Get environment name 
 		
+		# Get environment name 
 		environment = input("Please enter environment name: ") 
 
 		# Check if we're done
-
 		if environment == "Exit" :
 			logging.info('- Exiting helloworld listener')
 			break
 
-		# If not done print environment 
-
+		# If not done write environment to git, the console and the log file 
+		push(file_path, "Edit Envirionments", environment, "main", update=True)
 		print(environment)
 		logging.info('- ' + environment + ' has been read')
 
@@ -38,3 +57,8 @@ try:
 
 except Exception as e:
    logging.error('Error at %s', exc_info=e)
+
+
+
+
+
