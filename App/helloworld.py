@@ -33,7 +33,7 @@ try:
 
 		if arg != "helloworld.py" :
 			if arg != "/home/vagrant/helloworld/App/helloworld.py" : # ugly line of code should be using string in arg comparison nut this works so moving on
-				logging.info('- ' + arg + ' environment variable has been updated using a call with parameters')
+				logging.info('- ' + arg + ' has been used to update the environment variable with a call using parameters')
 				push(file_path, "Edit Envirionments", arg, "main", update=True)
 				exit()
 
