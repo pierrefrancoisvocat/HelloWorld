@@ -12,8 +12,8 @@ logging.basicConfig(filename='/var/log/helloworld/helloworld.log', level=logging
 logging.info('- Starting up Hello World reader')
 
 #git
-git_token = input("Please enter git token: ")
-token = os.getenv('GITHUB_TOKEN', git_token)
+#git_token = input("Please enter git token: ")
+token = os.getenv('GITHUB_TOKEN', '123git_token321')
 g = Github(token)
 repo = g.get_repo("pierrefrancoisvocat/HelloWorld")
 file_path = "/conf/helloworld.conf"
@@ -32,9 +32,10 @@ try:
 	for arg in sys.argv:
 
 		if arg != "helloworld.py" :
-			logging.info('- ' + arg + ' has been updated using a call using parameters')
-			push(file_path, "Edit Envirionments", arg, "main", update=True)
-			exit()
+			if arg != "/home/vagrant/helloworld/App/helloworld.py" : # ugly line of code should be using string in arg comparison nut this works so moving on
+				logging.info('- ' + arg + ' has been updated using a call using parameters')
+				push(file_path, "Edit Envirionments", arg, "main", update=True)
+				exit()
 
 	while True:
 
